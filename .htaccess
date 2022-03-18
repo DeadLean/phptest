@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FLIENAME} !-f
+RewriteCond %{REQUEST_FLIENAME} !-d
+
+RewriteRule ^(.*)$ /index.php
